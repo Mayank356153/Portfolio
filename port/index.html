@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            width: 100vw;
+            height: 70px;
+            background-color: #5e5a5a;
+            position: sticky;
+        top: 0;
+        margin: 0 auto;  
+    
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 20px;
+        z-index: 10;
+    }
+    ul{
+        display:flex;
+       gap: 70px;
+        list-style: none;
+    }
+    .social >ul{
+        gap: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: #9C9C9C;
+        
+    }
+    .sym{
+        width: 107.54px;
+        height: 17px;
+        fill: #FFFFFF;
+    }
+    .home1{
+        background-color: #1B1B1B;
+      
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        
+        gap:20px;
+    }
+    .info{
+        width: 538px;
+        height: 247px;
+        margin-left: 180px;
+        margin-top: 201px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* background-color: green; */
+    }
+    .start{
+        width: 307.89px;
+        height: 63px;
+        
+        padding: 21px 64px;
+        background-color: #3F8E00;
+        stroke: #62BA1B;
+    }
+    .start span{
+        width: 164px;
+        height: 21px;
+        font-weight: bold;
+        line-height: auto;
+        letter-spacing: 0%;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+    .name{
+        width: 426px;
+        height: 72px;
+        font-size: 44px;
+        font-weight: bolder;
+        font-style: "Raleway";
+        color: #FFFFFF;
+        line-height: auto;
+    }
+    .intro{
+        width: 492px;
+        height: 72px;
+        line-height: 24px;
+        color: #9C9C9C;
+        font-size: 14px;
+        letter-spacing: 1%;
+        font-style: "IBM Plex Mono";
+    }
+   
+    .image{
+        width: 350px;
+        height: 350px;
+        /* background-color: blue; */
+       margin-top: 150px;
+    }
+    img{
+        border:1px solid;
+        border-radius: 200px;
+    }
+    .work{
+        width: 920px;
+        height: 60px;
+        background-color: gray;
+        margin-top: 595px;
+        margin-left:180px ;
+    }
+    /* PROJECT */
+    .project{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+    .inside{
+        margin-top: 100px;
+        /* background-color: red; */
+        text-align: center;
+        width: 897px;
+        height:1242px;
+    }
+    .head{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .head2{
+        width: 570px;
+        height: 72px;
+        color: #9C9C9C;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 1%;
+    }
+    .project11{
+        width:421px;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+      <div class="list">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Recent Work</a></li>
+            <li><a href="#">Get In Touch</a></li>
+        </ul>
+      </div>
+      <div class="social">
+        <ul>
+            <li><a href="#"><img src="linkedin.svg" alt="linkedin logo"  class="sym"></a></li>
+            <li><a href="#"><img src="icons8-instagram.svg" alt="instagram logo" class="sym"></a></li>
+            <li><a href="#"><img src="iconmonstr-github-1.svg" alt="github" class="sym"></a></li>
+        </ul>
+      </div>
+    </nav>
+      <main>
+        <div class="home">
+            <div class="home1">
+
+                <div class="info">
+                    <div class="name">Mayank Sharma</div>
+                    <div class="intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas consectetur provident at quaerat nam quam, ea libero voluptatem non necessitatibus sapiente saepe aut in, magnam suscipit impedit, facilis minus quae!</div>
+                    <button class="start"><span>Let's get started </span></button>
+                </div>
+                <div class="image">
+                    <img src="image 11.png" alt="" width="350px" >
+                </div>
+            </div>
+            <!-- <div class="work">
+
+            </div> -->
+        </div>
+        <div class="project">
+             <div class="inside">
+                <div class="head">
+                    <div class="head1">Case Studies</div>
+                    <div class="head2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis eos est, maiores architecto provident ducimus repellendus necessitatibus, consequatur perferendis veritatis iusto asperiores doloribus ipsa dolore nisi fugit cumque saepe?</div>
+                </div>
+                <div class="project1">
+                    <div class="project11">
+                        <button>Fintech</button>
+                        <span class="pname">Work name here</span>
+                        <span class="pinfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero iste enim ab? Iste magni architecto unde, quam recusandae voluptas quo accusantium adipisci, libero temporibus, autem fuga aspernatur facilis omnis nisi.</span>
+                    </div>
+                    <div class="project12"></div>
+                </div>
+                <div class="project2"></div>
+                <div class="project3"></div>
+             </div>
+        </div>
+      </main>
+</body>
+</html>
