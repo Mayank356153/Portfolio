@@ -68,6 +68,8 @@
         padding: 21px 64px;
         background-color: #3F8E00;
         stroke: #62BA1B;
+        margin-top: 40px;
+        cursor: pointer;
     }
     .start span{
         width: 164px;
@@ -103,7 +105,7 @@
         /* background-color: blue; */
        margin-top: 150px;
     }
-    img{
+    .image img{
         border:1px solid;
         border-radius: 200px;
     }
@@ -118,12 +120,13 @@
     .project{
         width: 100vw;
         height: 100vh;
+        
         display: flex;
         justify-content: center;
     }
     .inside{
         margin-top: 100px;
-        /* background-color: red; */
+        
         text-align: center;
         width: 897px;
         height:1242px;
@@ -142,8 +145,77 @@
         line-height: 24px;
         letter-spacing: 1%;
     }
+    .project1{
+        display: flex;
+    }
     .project11{
         width:421px;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        
+    }
+    .pbutton1{
+        
+        width: 72px;
+        height: 24px;
+        margin-top: 11px;
+    }
+    .pbutton1 button{
+        
+        padding: 0 10px;
+        
+
+        width: 72px;
+        height:24px ;
+        border: none;
+        border-radius: 60px;
+    }
+    .pname{
+        
+        text-align: left;
+        width: 192px;
+        height: 28px;
+        margin-top:11px;
+        margin-left:0;
+        font-size: 24px;
+        font-weight: bolder;
+    }
+    .pinfo{
+        top: 109px;
+        left: 0;
+        color: #9C9C9C;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 1%;
+        
+        text-align: left;
+    }
+    .pinfo button{
+        width: 189.89px;
+        height: 38px;
+        padding: 10px 24px;
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+        background-color: #FFA217;
+        color: #FFFFFF;
+        margin-top: 25px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .pinfo img{
+        
+    }
+    .project12{
+        
+        width: 445px;
+        height: 300px;
+        margin-left: 25px;
+    }
+    .right{
+        width: 12px;
+        filter: ;
     }
     </style>
 </head>
@@ -187,18 +259,51 @@
              <div class="inside">
                 <div class="head">
                     <div class="head1">Case Studies</div>
-                    <div class="head2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis eos est, maiores architecto provident ducimus repellendus necessitatibus, consequatur perferendis veritatis iusto asperiores doloribus ipsa dolore nisi fugit cumque saepe?</div>
+                    <div class="head2" style="margin-bottom: 100px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis eos est, maiores architecto provident ducimus repellendus necessitatibus, consequatur perferendis veritatis iusto asperiores doloribus ipsa dolore nisi fugit cumque saepe?</div>
                 </div>
                 <div class="project1">
                     <div class="project11">
-                        <button>Fintech</button>
-                        <span class="pname">Work name here</span>
-                        <span class="pinfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero iste enim ab? Iste magni architecto unde, quam recusandae voluptas quo accusantium adipisci, libero temporibus, autem fuga aspernatur facilis omnis nisi.</span>
+                        <div class="pbutton1"><button style=" background-color: #FFF6E9;
+                            color: #FFA217;">Fintech</button></div>
+                        <div class="pname">
+                            <span>Work name here</span>
+                        </div>
+                        <div class="pinfo">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A dicta dolorum placeat quis, tempore ipsa optio mollitia harum fugit odio quos, accusamus illum cum consequuntur, obcaecati repellat? Amet, aliquid repudiandae!</p>
+                            <button>View Case Study</button>
+                        </div>
+                        
                     </div>
-                    <div class="project12"></div>
+                    <div class="project12">
+                        <img src="Mask group.png" alt="">
+                    </div>
                 </div>
-                <div class="project2"></div>
-                <div class="project3"></div>
+                <div class="project1">
+                    <div class="project12" style="margin-left: 0;margin-top: 100px;"><img src="Mask group1.png" alt=""></div>
+                    <div class="project11" style="margin-top: 100px;margin-left: 25px;">
+                        <div class="pbutton1"><button style="background-color:#D0E6FF ;color: #000AFF;">Edtech</button></div>
+                        <div class="pname">
+                            <span>Work name here</span>
+                        </div>
+                        <div class="pinfo">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A dicta dolorum placeat quis, tempore ipsa optio mollitia harum fugit odio quos, accusamus illum cum consequuntur, obcaecati repellat? Amet, aliquid repudiandae!</p>
+                            <button style="background-color: #000AFF;color: white;">View Case Study <img src="right-arrow-svgrepo-com.svg" alt="" class="right"></button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="project1" style="margin-top: 100px;">
+                    <div class="project11">
+                        <div class="pbutton1"><button style="background-color: #E0FFF8;color:#2AB090;">Pharma</button></div>
+                        <div class="pname">
+                            <span>Work name here</span>
+                        </div>
+                        <div class="pinfo">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A dicta dolorum placeat quis, tempore ipsa optio mollitia harum fugit odio quos, accusamus illum cum consequuntur, obcaecati repellat? Amet, aliquid repudiandae!</p>
+                            <button style="background-color: #2AB090;color: #FFFFFF;">View Case Study <img src="right-arrow-svgrepo-com.svg" class="right" alt=""></button>
+                        </div>
+                    </div><div class="project12"><img src="Mask group12.png" alt=""></div>
+                </div>
              </div>
         </div>
       </main>
