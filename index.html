@@ -10,13 +10,13 @@
             padding: 0;
         }
         nav{
-            width: 100vw;
+            width: 100;
             height: 70px;
             background-color: #5e5a5a;
             position: sticky;
         top: 0;
         margin: 0 auto;  
-    
+    overflow-x: hidden;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -60,6 +60,10 @@
         flex-direction: column;
         gap: 20px;
         /* background-color: green; */
+    }
+    main{
+        width: 100%;
+        height: auto;
     }
     .start{
         width: 307.89px;
@@ -220,7 +224,7 @@
         width: 100vw;
         height: auto;
         background-color: black;
-        margin-top: 70px;
+        margin-top: 100px;
         display: flex;
         flex-direction: column;
 
@@ -235,7 +239,7 @@
     font-weight: bolder;
     font-family: "Raleway";
     text-align: center;
-    
+    margin-top: 100px;
    }
    .testh p{
     margin-top: 10px;
@@ -248,7 +252,7 @@
     letter-spacing: 1%;
    }
    .tab{
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 180px;
     width: 100%;
     display: grid;
@@ -260,7 +264,8 @@
    .table{
     width: 445px;
     height: 212px;
-    border: 2px solid #9C9C9C;
+    border-top: 2px solid #9C9C9C;
+    border-left: 2px solid #9C9C9C;;
     border-radius: 20px;
    }
    .table p{
@@ -289,17 +294,128 @@
     color: #FFFFFF;
     font-weight: bolder;
    }
+   .recentwork{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+   }
+  .recentcontent{
+    width: 100%;
+    height: 10vw;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .recentcontent span{
+    font-size: 34px;
+    font-weight: bolder;
+   font-family: Raleway;
+   /* margin-top: 100px; */
+  }
+  .recentcontent p{
+    width:  50svw;
+    height: 72px;
+    color: #9C9C9C;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1%;
+    margin-top: 10px;
+    margin-left: 450px;
+  }
+  .recenttab{
+    width: 100vw;
+    height:auto;
+    
+    display: flex;
+    justify-content: center;
+    
+    gap: 20px;
+  }
+  .recentab1{
+    width: 445px;
+    height: 494px;
+    border: 2px solid red;
+    text-align: left;
+  }
+  .rimg{
+    width: 445px;
+    height: 300px;
+    margin-bottom: 30px;
+  }
+  .recenttab1 > span{
+    font-size:24px ;
+    font-weight: bolder;
+  }
+  .recenttab1 >p{
+  margin-top: 10px;
+  color:#9C9C9C;
+  line-height: 24px;
+  width: 421px;
+  height: 48px;
+  }
+  .recenttab1 > button{
+    background-color:#3F8E00 ;
+    fill:#3F8E00 ;
+    stroke: #62BA1B;
+    width: 139.89px;
+    height: 38px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top:20px ;
+    margin-bottom: 20px;
+  }
+  .contact{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+  .contactinfo{
+    padding-top: 80px;
+    text-align:center;
+  }
+  .contactinfo > span{
+  width: 206px;
+  height: 40px;
+  font-size: 34px;
+  font-weight: bolder;
+  color:#FFFFFF;
+  }
+  .contactinfo >center>p{
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    width: 570px;
+    height: 48px;
+    line-height: 24px;
+    letter-spacing: 1%;
+    color: #9C9C9C;
+  }
+  .contacttable{
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+
+  }
+  tr{
+    background-color: red;
+  }
     </style>
 </head>
 <body>
     <nav>
       <div class="list">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Case Studies</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Recent Work</a></li>
-            <li><a href="#">Get In Touch</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#project">Case Studies</a></li>
+            <li><a href="#testimonial">Testimonials</a></li>
+            <li><a href="#recentwork">Recent Work</a></li>
+            <li><a href="#contact">Get In Touch</a></li>
         </ul>
       </div>
       <div class="social">
@@ -311,7 +427,7 @@
       </div>
     </nav>
       <main>
-        <div class="home">
+        <div class="home" id="home">
             <div class="home1">
 
                 <div class="info">
@@ -325,7 +441,7 @@
             </div>
            
         </div>
-        <div class="project">
+        <div class="project" id="project">
              <div class="inside">
                 <div class="head">
                     <div class="head1"><h1>Case Studies</h1></div>
@@ -376,7 +492,7 @@
                 </div>
              </div>
         </div>
-        <div class="testimonial">
+        <div class="testimonial" id="testimonial">
            <div class="testh">
                 <h1>TESTIMONIAL</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas minus consequatur, eveniet perspiciatis nam voluptatum itaque laborum deleniti adipisci iusto reiciendis vitae, recusandae et dolor maxime quibusdam quidem aliquam repudiandae!</p>
@@ -419,10 +535,63 @@
                 </div>
             </div>
         </div>
-        <div class="recentwork">
-           <span>Recent Work</span> 
+        <div class="recentwork" id="recentwork">
+            <div class="recentcontent">
+                <span>Recent Work</span>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, quasi porro ad repudiandae, sequi itaque rem eaque dolores magni, mollitia aut. Consequuntur praesentium dolores tenetur alias totam doloribus laborum nihil. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus voluptates, ipsam a distinctio quidem dolor amet voluptate. Sapiente, porro sunt. Quos provident facere sunt explicabo asperiores. Quas placeat facilis maiores?</p>
+            </div>
+            <div class="recenttab">
+                <div class="recenttab1">
+                    <div class="rimg">
+                        <img src="Mask group12.png" alt="">
+                    </div>
+                    <span>Work name here</span>
+                    <p>Rempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt u</p>
+                    <button>Know more</button>
+                </div>
+                <div class="recenttab1">
+                    <div class="rimg">
+                        <img src="Mask group12.png" alt="">
+                    </div>
+                    <span>Work name here</span>
+                    <p>Rempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt u</p>
+                    <button>Know more</button>
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <div class="contactinfo">
+                <span>Get In Touch</span>
+                <center>
+                
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nihil reprehenderit doloribus excepturi alias vero neque illo ducimus eos sed doloremque, necessitatibus labore, incidunt officia, dicta similique quo ad corporis.</p>
+                </center>
+            </div>
+            <div class="contacttable">
+                <table>
+                    <form action="">
+                        <tr>
+                            Email: <br>
+                            <input type="email" id="email" value="Please"> <br></tr>
+                        <tr>
+                            Mobile: <br>
+                            <input type="number" id="email" value="Please"> <br></tr>
+                        <tr>
+                            Message: <br>
+                            <textarea name="message" id="message"></textarea></tr>
+                    </form>
+                </table>
+            </div>
         </div>
       </main>
-      |
+      <script>document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
 </body>
 </html>
