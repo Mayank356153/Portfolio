@@ -34,6 +34,7 @@
     a{
         text-decoration: none;
         color: #9C9C9C;
+        pointer-events: auto;
         
     }
     .sym{
@@ -420,11 +421,14 @@
       </div>
       <div class="social">
         <ul>
-            <li><a href="#"><img src="linkedin.svg" alt="linkedin logo"  class="sym"></a></li>
-            <li><a href="#"><img src="icons8-instagram.svg" alt="instagram logo" class="sym"></a></li>
-            <li><a href="#"><img src="iconmonstr-github-1.svg" alt="github" class="sym"></a></li>
+            <li><a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGNkvWlEltm-gAAAZOTvQZ43CT5H5XKTiV5HOhjUAxIIplQbV5T1ZXbzNlNoMgtI4Aa3Basv-1_BaKRuqcgp3MWJ3V5KHgvSdnW1YDbVazzUBm7dFhBmbp3jiCtIFS5dPHm8Ok=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmayank-sharma-421b1731a" target="_blank"><img src="linkedin.svg" alt="LinkedIn Logo" class="sym"></a></li>
+            <li><a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank" rel="noopener noreferrer">
+                <img src="icons8-instagram.svg" alt="Instagram Logo" class="sym"></a></li>
+            <li><a href="https://github.com/Mayank356153" target="_blank" rel="noopener noreferrer">
+                <img src="iconmonstr-github-1.svg" alt="GitHub Logo" class="sym"></a></li>
         </ul>
-      </div>
+    </div>
+    
     </nav>
       <main>
         <div class="home" id="home">
@@ -585,13 +589,16 @@
         </div>
       </main>
       <script>document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+        if (!anchor.getAttribute('href').startsWith('http')) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
-        });
+        }
     });
+    
     </script>
 </body>
 </html>
